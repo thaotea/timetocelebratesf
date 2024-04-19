@@ -224,6 +224,16 @@ main {
   bottom: -14%;
   width: 300px;
 }
+@media only screen and (max-width: 1100px) {
+  .intro .img.img-1 {
+    bottom: -18%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .intro .img.img-1 {
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .intro .img.img-1 {
     display: none;
@@ -234,6 +244,11 @@ main {
   right: 0;
   z-index: -2;
   width: 250px;
+}
+@media only screen and (max-width: 991px) {
+  .intro .img.img-2 {
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .intro .img.img-2 {
@@ -257,17 +272,37 @@ main {
     font-size: 2em;
   }
 }
+@media only screen and (max-width: 370px) {
+  .intro .text h1 > span:first-child {
+    font-size: 1.75em;
+  }
+}
 .intro .text h1 > span:last-child {
   font-size: 5em;
   line-height: 0.75;
 }
 @media only screen and (max-width: 767px) {
   .intro .text h1 > span:last-child {
-    font-size: 3em;
+    font-size: 2.75em;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .intro .text h1 > span:last-child {
+    font-size: 2.25em;
   }
 }
 .intro .text .subline {
   font-size: 3em;
+}
+@media only screen and (max-width: 767px) {
+  .intro .text .subline {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .intro .text .subline {
+    font-size: 2em;
+  }
 }
 .intro .text .location {
   font-size: 2em;
@@ -278,9 +313,14 @@ main {
 }
 
 .products {
-  margin-top: 50px;
+  margin-top: 200px;
   text-align: center;
   padding: 0 50px;
+}
+@media only screen and (max-width: 767px) {
+  .products {
+    margin-top: 50px;
+  }
 }
 .products .product-title {
   margin: 100px 0 50px 0;
@@ -312,6 +352,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .products .product-flex .product {
   flex: 1 0 calc(33.33% - 13.3333333333px);
@@ -388,6 +430,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .colors .colors-grid:not(:last-child) {
   margin-bottom: 20px;
@@ -416,6 +460,11 @@ main {
   width: 100px;
 }
 .colors .colors-grid figcaption {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+.colors .colors-description p {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 300;
   font-size: 1em;
