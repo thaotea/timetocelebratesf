@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
-	font-family: 'Peach';
+	font-family: 'Mango';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/Peach.otf') format('opentype');
+	src: url('../fonts/Mango.otf') format('opentype');
 }
 
 @font-face {
-	font-family: 'Peach Outline';
+	font-family: 'Mango';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/Peach-Outline.otf') format('opentype');
+	src: url('../fonts/Mang.ttf') format('truetype');
 }
 
 :root {
@@ -28,7 +28,7 @@ html {
 
 body {
 	position: relative;
-	font-family: 'Peach';
+	font-family: 'Mango';
 	font-size: 16px;
 	background-color: var(--main-bg-color);
 	margin: 0;
@@ -292,6 +292,12 @@ main {
 		margin-top: 50px;
 	}
 
+	h2 {
+		&.customized {
+			letter-spacing: 0.1px;
+		}
+	}
+
 	.product-title {
 		margin: 100px 0 50px 0;
 
@@ -390,14 +396,24 @@ main {
 		position: relative;
 		font-size: 5em;
 		margin: 0;
+
+		@media only screen and (max-width: 767px) {
+			font-size: 4em;
+		}
+
+		@media only screen and (max-width: 370px) {
+			font-size: 3.25em;
+		}
 	}
 
 	h3 {
 		font-size: 2em;
+		letter-spacing: 0.1px;
 	}
 
 	p {
 		font-size: 2em;
+		letter-spacing: 0.1px;
 	}
 
 	.group {
