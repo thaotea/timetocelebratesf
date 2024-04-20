@@ -80,6 +80,9 @@ main {
   height: 100%;
 }
 
+.mobile .cursor {
+  display: none;
+}
 .cursor.multiply span.sm svg {
   mix-blend-mode: multiply;
 }
@@ -306,6 +309,7 @@ main {
 }
 .intro .text .location {
   font-size: 2em;
+  letter-spacing: 0.1px;
 }
 .intro .text svg {
   fill: var(--text-color);

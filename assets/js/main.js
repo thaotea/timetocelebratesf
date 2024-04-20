@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	if (isMobileOrTabletBrowser()) {
+		$('body').addClass('mobile');
+	}
+
 	$('.letter-animation').each(function () {
 		var characters = $(this).text().split('');
 		$this = $(this);
@@ -10,6 +14,12 @@ $(document).ready(function () {
 
 	mouseCursor();
 });
+
+function isMobileOrTabletBrowser() {
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|Tablet/i.test(
+		navigator.userAgent
+	);
+}
 
 function mouseCursor() {
 	var targetX = 0;

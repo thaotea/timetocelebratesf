@@ -85,6 +85,10 @@ main {
 }
 
 .cursor {
+	.mobile & {
+		display: none;
+	}
+
 	&.multiply {
 		span {
 			&.sm {
@@ -274,6 +278,7 @@ main {
 
 		.location {
 			font-size: 2em;
+			letter-spacing: 0.1px;
 		}
 
 		svg {
