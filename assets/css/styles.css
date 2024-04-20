@@ -9,7 +9,7 @@
   font-family: "Mango";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Mang.ttf") format("truetype");
+  src: url("../fonts/Mango.ttf") format("truetype");
 }
 :root {
   --cursor: auto;

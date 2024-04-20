@@ -3,6 +3,9 @@ $(document).ready(function () {
 		$('body').addClass('mobile');
 	}
 
+	const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+	observer.observe();
+
 	$('.letter-animation').each(function () {
 		var characters = $(this).text().split('');
 		$this = $(this);
